@@ -91,18 +91,19 @@ h1 {
 .delete-icon {
   cursor: pointer;
 }
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .TodoWrapper {
-    margin-top: 3rem;
     padding: 1.5rem;
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .todo-input {
-    width: calc(100% - 2rem);
+    margin-top: 1rem;
   }
 
   .Todo {
@@ -110,31 +111,37 @@ h1 {
     align-items: flex-start;
   }
 
-  .fa-trash {
-    margin-left: 0;
+  .icon-wrapper {
     margin-top: 0.5rem;
+    align-self: flex-end;
   }
 }
 
 @media (max-width: 480px) {
   .TodoWrapper {
-    margin-top: 2rem;
     padding: 1rem;
   }
 
   h1 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .todo-input {
-    width: calc(100% - 1rem);
-  }
-
-  .todo-btn {
     padding: 0.5rem;
   }
 
   .Todo {
     padding: 0.5rem 0.75rem;
+  }
+
+  .icon-wrapper {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .todo-btn {
+    padding: 0.3rem 0.6rem; /* Adjust button padding for small screens */
+    font-size: 0.8rem; /* Adjust font size for small screens */
   }
 }
